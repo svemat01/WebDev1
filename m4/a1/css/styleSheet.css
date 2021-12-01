@@ -1,0 +1,103 @@
+* {
+   box-sizing: border-box;
+   margin: 0; padding: 0;
+}
+
+html {
+   font-size: 62.5%
+}
+
+body{
+   font-size: 1.4rem;
+   font-family: Arial, Verdana, sans-serif;
+   margin:auto;
+   max-width: 100rem;
+}
+header {
+   background-color: black;
+   padding: 1rem;
+   margin-top: 0.5rem;
+   position: relative;
+   margin-bottom: 0.7rem;
+}
+
+header h1 {
+   font-size: 2.6rem;
+   font-weight: normal;
+   margin-bottom: 0.3rem;
+   color: white;
+}
+
+header h2 {
+   font-size: 1.4rem;
+   color: grey;
+   margin-left: 1.4rem;
+   margin-bottom: 0.5rem;
+}
+
+section h2{
+   font-size: 2rem;
+   font-weight: normal;
+   margin-bottom: 0.5rem;
+
+}
+
+section p{
+   margin-bottom: 0.5rem;
+}
+
+img.right {
+   float:right;
+   margin-right: 2rem;
+   width: 230px;
+}
+
+section.green{
+   background-color: #5cb85c;
+   border: 0.1rem solid green;
+}
+section.red{
+   background-color: #d9534f;
+   border: 0.1rem solid red;
+}
+section.blue{
+   background-color: #428bca;
+   border: 0.1rem solid blue;
+}
+section.yellow{
+   background-color: #f6ec50;
+   border: 0.1rem solid olive;
+}
+
+section.silver{
+   background-color: silver;
+   border: 0.1rem solid grey;
+}
+section.orange{
+   background-color: #f0ad4e;
+   border: 0.1rem solid orange;
+}
+
+footer {
+   background-color: black;
+   padding: 1rem;
+   margin-top: 0.7rem;
+   color: white;
+   min-height: 5rem;
+}
+
+
+/** Tablets */
+@media (min-width: 768px){
+
+}
+
+/** desktop */
+@media (min-width: 980px){
+
+}
+
+/** Large desktop */
+@media (min-width: 1200px){
+
+}
