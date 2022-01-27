@@ -13,7 +13,8 @@ body {
   font-family: Rajdhani, sans-serif;
   background: #404040;
   color: #f4f4f4;
-  position: relative;
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
 }
 
@@ -31,8 +32,14 @@ header {
   color: #f4f4f4;
   padding: 1em;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+@media screen and (min-width: 700px) {
+  header {
+    flex-direction: row;
+  }
 }
 header h1 {
   margin-left: 1rem;
@@ -43,22 +50,51 @@ header h1 {
     font-size: 2.5em;
   }
 }
-header ul {
-  list-style: none;
+header nav {
   display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  width: 100%;
+}
+header nav:hover ul {
+  display: flex;
+}
+header nav #menuButton {
+  font-size: 3rem;
+  padding-right: 2rem;
+  margin-left: auto;
+}
+header nav ul {
   align-items: center;
   gap: 1.5rem;
   margin-right: 2rem;
   margin-left: 2rem;
   font-size: 2rem;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 20rem;
+  display: none;
+}
+@media screen and (min-width: 700px) {
+  header nav {
+    margin-left: auto;
+    width: auto;
+    padding-top: 0;
+  }
+  header nav #menuButton {
+    display: none;
+  }
+  header nav ul {
+    display: flex;
+    justify-content: none;
+    max-width: none;
+  }
 }
 
 main {
   margin: 2rem;
-}
-main article {
-  background-color: #2e2e2e;
-  padding: 1.8rem;
+  flex-grow: 1;
 }
 main article h1 {
   font-size: 2.5em;
@@ -73,18 +109,16 @@ footer {
   background: #262626;
   color: #f4f4f4;
   display: flex;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  height: 10rem;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem 3rem;
   margin-top: 3rem;
 }
 footer address {
   font-size: 1.8rem;
 }
 footer nav {
-  margin-right: 2rem;
+  margin-left: auto;
 }
 footer nav h2 {
   font-size: 2rem;
@@ -99,6 +133,12 @@ footer nav li:hover {
 footer nav li.mark {
   color: #f4f4f4;
   list-style: square;
+}
+
+.card {
+  background-color: #2e2e2e;
+  padding: 1.8rem;
+  border-radius: 1.3rem;
 }
 
 /*# sourceMappingURL=global.css.map */

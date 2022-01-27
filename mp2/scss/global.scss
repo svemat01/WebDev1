@@ -5,6 +5,8 @@ $gray: #404040;
 $white: #f4f4f4;
 $darkWhite: #838383;
 
+$tabletWidth: 700px;
+
 * {
     padding: 0;
     margin: 0;
@@ -21,7 +23,8 @@ body {
     background: $gray;
     color: $white;
 
-    position: relative;
+    display: flex;
+    flex-direction: column;
 
     min-height: 100vh;
 }
@@ -43,8 +46,15 @@ header {
     padding: 1em;
 
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    flex-direction: column;
+
+    align-items: center;
+
+    position: relative;
+
+    @media screen and (min-width: $tabletWidth) {
+        flex-direction: row;
+    }
 
     h1 {
         margin-left: 1rem;
@@ -54,34 +64,78 @@ header {
             font-size: 2.5em;
         }
     }
-
-    ul {
-        list-style: none;
-
+    nav {
         display: flex;
-        align-items: center;
-        gap: 1.5rem;
 
-        margin-right: 2rem;
-        margin-left: 2rem;
+        justify-content: space-between;
 
-        font-size: 2rem;
-        
+        padding-top: 1rem;
+
+        width: 100%;
+
+        &:hover {
+            ul {
+                display: flex;
+            }
+        }
+
+        #menuButton {
+            font-size: 3rem;
+
+            padding-right: 2rem;
+            margin-left: auto;
+        }
+
+        ul {
+            align-items: center;
+            gap: 1.5rem;
+
+            margin-right: 2rem;
+            margin-left: 2rem;
+
+            font-size: 2rem;
+            list-style: none;
+
+            flex-wrap: wrap;
+
+            justify-content: space-evenly;
+
+            max-width: 20rem;
+
+            display: none;
+        }
+
+        @media screen and (min-width: $tabletWidth) {
+            margin-left: auto;
+
+            width: auto;
+
+            padding-top: 0;
+
+            #menuButton {
+                display: none;
+            }
+
+            ul {
+                display: flex;
+                justify-content: none;
+
+                max-width: none;
+            }
+        }
     }
 }
 
-
 main {
     margin: 2rem;
+    flex-grow: 1;
+
     article {
-        background-color: $darkGray;
-        padding: 1.8rem;
-    
         h1 {
             font-size: 2.5em;
             margin-bottom: 1rem;
         }
-        
+
         p {
             font-size: 1.5em;
             margin-bottom: 1rem;
@@ -89,43 +143,34 @@ main {
     }
 }
 
-
 footer {
     background: $dark;
     color: $white;
 
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
 
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
-    height: 10rem;
-
-    // padding: 1rem;
+    padding: 2rem 3rem;
     margin-top: 3rem;
 
-
     address {
-        // float: left;
-
         font-size: 1.8rem;
     }
 
     nav {
         // float: right;
-        margin-right: 2rem;
+        margin-left: auto;
 
         h2 {
             font-size: 2rem;
         }
-        
+
         li {
             font-size: 1.5rem;
             color: $darkWhite;
 
-            &:hover{
+            &:hover {
                 color: $white;
             }
 
@@ -135,4 +180,14 @@ footer {
             }
         }
     }
+}
+
+// Utility Classes
+// --------------------------------------------------
+
+.card {
+    background-color: $darkGray;
+    padding: 1.8rem;
+
+    border-radius: 1.3rem;
 }
