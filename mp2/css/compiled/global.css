@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: Rajdhani, sans-serif;
+  background: #404040;
+  color: #f4f4f4;
+  position: relative;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  background: #262626;
+  color: #f4f4f4;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+header h1 {
+  margin-left: 1rem;
+  font-size: 3.4em;
+}
+@media (max-width: 300px) {
+  header h1 {
+    font-size: 2.5em;
+  }
+}
+header ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  font-size: 2rem;
+}
+
+main {
+  margin: 2rem;
+}
+main article {
+  background-color: #2e2e2e;
+  padding: 1.8rem;
+}
+main article h1 {
+  font-size: 2.5em;
+  margin-bottom: 1rem;
+}
+main article p {
+  font-size: 1.5em;
+  margin-bottom: 1rem;
+}
+
+footer {
+  background: #262626;
+  color: #f4f4f4;
+  display: flex;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 10rem;
+  margin-top: 3rem;
+}
+footer address {
+  font-size: 1.8rem;
+}
+footer nav {
+  margin-right: 2rem;
+}
+footer nav h2 {
+  font-size: 2rem;
+}
+footer nav li {
+  font-size: 1.5rem;
+  color: #838383;
+}
+footer nav li:hover {
+  color: #f4f4f4;
+}
+footer nav li.mark {
+  color: #f4f4f4;
+  list-style: square;
+}
+
+/*# sourceMappingURL=global.css.map */
