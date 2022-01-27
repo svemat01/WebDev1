@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"name": "WebDev1",
+			"path": "."
+		},
+		{
+			"name": "m4",
+			"path": "m4"
+		},
+		{
+			"name": "mp1",
+			"path": "mp1"
+		},
+		{
+			"name": "mp2",
+			"path": "mp2"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "mp2"
+	}
+}
