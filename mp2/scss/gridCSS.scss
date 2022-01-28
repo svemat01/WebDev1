@@ -1,3 +1,5 @@
+@import "_variables";
+
 .grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -40,7 +42,7 @@
 }
 
 /** Tablets */
-@media (min-width: 768px){
+@media (min-width: $tabletWidth) {
     [class*="col-t-"] {
         /* Reset av row-span*/
         grid-row: span 1;
@@ -80,7 +82,7 @@
 }
 
 /** desktop */
-@media (min-width: 980px){
+@media (min-width: $desktopWidth) {
     [class*="col-d-"] {
         /* Reset av row-span*/
         grid-row: span 1;
@@ -120,7 +122,7 @@
 }
 
 /** Large desktop */
-@media (min-width: 1200px){
+@media (min-width: 1200px) {
     [class*="col-ld-"] {
         /* Reset av row-span*/
         grid-row: span 1;

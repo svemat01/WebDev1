@@ -1,0 +1,73 @@
+table {
+  background-color: #f4f4f4;
+  color: #262626;
+}
+table th {
+  font-size: 2rem;
+  text-align: center;
+}
+table td {
+  font-size: 1.7rem;
+  padding-right: 1.7rem;
+}
+table tbody tr:nth-child(odd) > td {
+  background-color: #cfcfcf;
+}
+table.rounded {
+  border: 0.7rem solid #838383;
+  border-radius: 1.5rem;
+  border-spacing: 0.2rem;
+  padding-bottom: 0.1rem;
+}
+table.rounded td {
+  border: 1px solid #838383;
+  padding: 10px;
+}
+table.rounded tr:last-child > td {
+  border-bottom: none;
+}
+table.rounded tbody tr:first-child > td:first-child {
+  border-top-left-radius: 0.5rem;
+}
+table.rounded tbody tr:first-child > td:last-child {
+  border-top-right-radius: 0.5rem;
+}
+table.rounded tbody tr:last-child > td:first-child {
+  border-bottom-left-radius: 0.5rem;
+}
+table.rounded tbody tr:last-child > td:last-child {
+  border-bottom-right-radius: 0.5rem;
+}
+
+.author {
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+.author > div {
+  margin-top: 1rem;
+}
+.author a {
+  color: #cfcfcf;
+  text-decoration: none;
+}
+.author a:hover {
+  color: #838383;
+}
+@media screen and (min-width: 1200px) {
+  .author {
+    flex-direction: row;
+    align-items: stretch;
+  }
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+}
+
+/*# sourceMappingURL=about.css.map */

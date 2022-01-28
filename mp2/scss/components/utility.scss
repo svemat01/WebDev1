@@ -1,0 +1,27 @@
+// Utility Classes
+// --------------------------------------------------
+
+.card {
+    background-color: $darkGray;
+    padding: 1.8rem;
+
+    border-radius: 1.3rem;
+}
+
+@media screen and (max-width: $tabletWidth) {
+    .hide-mobile {
+        display: none;
+    }
+}
+
+@media screen and (min-width: $tabletWidth) and (max-width: $desktopWidth) {
+    .hide-tablet {
+        display: none;
+    }
+}
+
+@media screen and (min-width: $desktopWidth) {
+    .hide-desktop {
+        display: none;
+    }
+}

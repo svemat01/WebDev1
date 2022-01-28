@@ -47,7 +47,7 @@
 }
 
 /** Tablets */
-@media (min-width: 768px) {
+@media (min-width: 700px) {
   [class*=col-t-] {
     /* Reset av row-span*/
     grid-row: span 1;
@@ -94,7 +94,7 @@
   }
 }
 /** desktop */
-@media (min-width: 980px) {
+@media (min-width: 1200px) {
   [class*=col-d-] {
     /* Reset av row-span*/
     grid-row: span 1;
