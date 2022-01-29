@@ -94,7 +94,7 @@
   }
 }
 /** desktop */
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   [class*=col-d-] {
     /* Reset av row-span*/
     grid-row: span 1;

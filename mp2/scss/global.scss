@@ -63,7 +63,7 @@ li {
 }
 
 img {
-    width: 100%;
+    width: 100%; // Max width get's set on each image individually
     border-radius: 1rem;
 }
 
@@ -85,7 +85,7 @@ header {
 
     position: relative;
 
-    @media screen and (min-width: $tabletWidth) {
+    @media screen and (min-width: $desktopWidth) {
         flex-direction: row;
     }
 
@@ -96,11 +96,15 @@ header {
         @media (max-width: 300px) {
             font-size: 2.5em;
         }
+
+        @media screen and (max-width: $tabletWidth) {
+            margin: 0 auto;
+        }
     }
     nav {
         display: flex;
 
-        justify-content: space-between;
+        justify-content: flex-end;
 
         padding-top: 1rem;
 
@@ -116,20 +120,21 @@ header {
             font-size: 3rem;
 
             padding-right: 2rem;
-            margin-left: auto;
+            // margin-left: auto;
         }
 
         ul {
             align-items: center;
+
             gap: 1.5rem;
 
-            margin-right: 2rem;
-            margin-left: 2rem;
+            margin: 0 auto;
 
             font-size: 2rem;
             list-style: none;
 
             flex-wrap: wrap;
+            flex-direction: column;
 
             justify-content: space-evenly;
 
@@ -137,12 +142,16 @@ header {
 
             display: none;
 
+            li.mark {
+                border-bottom: 0.2rem solid currentColor;
+            }
+
             a:hover {
                 color: $lightGray;
             }
         }
 
-        @media screen and (min-width: $tabletWidth) {
+        @media screen and (min-width: $desktopWidth) {
             margin-left: auto;
 
             width: auto;
@@ -155,6 +164,8 @@ header {
 
             ul {
                 display: flex;
+                flex-direction: row;
+
                 justify-content: none;
 
                 max-width: none;

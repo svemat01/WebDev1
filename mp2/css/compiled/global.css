@@ -9,12 +9,12 @@
     display: none;
   }
 }
-@media screen and (min-width: 700px) and (max-width: 1200px) {
+@media screen and (min-width: 700px) and (max-width: 1000px) {
   .hide-tablet {
     display: none;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1000px) {
   .hide-desktop {
     display: none;
   }
@@ -89,7 +89,7 @@ header {
   align-items: center;
   position: relative;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 1000px) {
   header {
     flex-direction: row;
   }
@@ -103,9 +103,14 @@ header h1 {
     font-size: 2.5em;
   }
 }
+@media screen and (max-width: 700px) {
+  header h1 {
+    margin: 0 auto;
+  }
+}
 header nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   padding-top: 1rem;
   width: 100%;
 }
@@ -115,24 +120,26 @@ header nav:hover ul {
 header nav #menuButton {
   font-size: 3rem;
   padding-right: 2rem;
-  margin-left: auto;
 }
 header nav ul {
   align-items: center;
   gap: 1.5rem;
-  margin-right: 2rem;
-  margin-left: 2rem;
+  margin: 0 auto;
   font-size: 2rem;
   list-style: none;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-evenly;
   max-width: 20rem;
   display: none;
 }
+header nav ul li.mark {
+  border-bottom: 0.2rem solid currentColor;
+}
 header nav ul a:hover {
   color: #838383;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 1000px) {
   header nav {
     margin-left: auto;
     width: auto;
@@ -143,6 +150,7 @@ header nav ul a:hover {
   }
   header nav ul {
     display: flex;
+    flex-direction: row;
     justify-content: none;
     max-width: none;
   }

@@ -52,7 +52,7 @@ table.rounded tbody tr:last-child > td:last-child {
 .author a:hover {
   color: #838383;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1000px) {
   .author {
     flex-direction: row;
     align-items: stretch;
@@ -72,6 +72,10 @@ main h2 {
 }
 #iamwrong:hover:after {
   content: "I am wrong and semantic HTML is actually really annoying :)))";
+}
+
+#lightning-bolt-icon {
+  margin-top: 1.2rem;
 }
 
 /*# sourceMappingURL=subPage.css.map */
