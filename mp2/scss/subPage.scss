@@ -28,11 +28,23 @@
     }
 }
 
-h1 {
-    font-size: 3rem;
-    margin-bottom: 1.5rem;
+main {
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    h2 {
+        margin-bottom: 1.5rem;
+    }
 }
 
-h2 {
-    margin-bottom: 1.5rem;
+#iamwrong:hover {
+    > span {
+        display: none;
+    }
+
+    &:after {
+        content: "I am wrong and semantic HTML is actually really annoying :)))";
+    }
 }

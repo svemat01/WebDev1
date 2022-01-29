@@ -7,6 +7,7 @@ table {
         // border-top: none;
         font-size: 2rem;
         text-align: center;
+        padding: 0 1rem;
     }
 
     td {
@@ -19,7 +20,7 @@ table {
     }
 
     &.rounded {
-        border: 0.7rem solid $lightGray;
+        border: 0.5rem solid $lightGray;
         border-radius: 1.5rem;
         border-spacing: 0.2rem;
 
@@ -28,10 +29,6 @@ table {
         td {
             border: 1px solid $lightGray;
             padding: 10px;
-        }
-
-        tr:last-child > td {
-            border-bottom: none;
         }
 
         tbody {

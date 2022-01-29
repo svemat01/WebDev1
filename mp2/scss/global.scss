@@ -13,7 +13,7 @@ html {
 }
 
 body {
-    font-family: Rajdhani, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background: $gray;
     color: $white;
 
@@ -23,19 +23,34 @@ body {
     min-height: 100vh;
 }
 
-h2 {
-    font-size: 2.5em;
-    margin-bottom: 1rem;
-}
+main {
+    h1 {
+        font-size: 3rem;
+    }
 
-h3 {
-    font-size: 2em;
-    margin-bottom: 1rem;
-}
+    h2 {
+        font-size: 2.5em;
+        margin-bottom: 1rem;
+    }
 
-p {
-    font-size: 1.7rem;
-    margin-bottom: 1rem;
+    h3 {
+        font-size: 2em;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: 1.7rem;
+        margin-bottom: 1rem;
+    }
+
+    a.underline {
+        color: $darkWhite;
+        border-bottom: 0.2rem solid currentColor; // border bottom gave me more flexibility than text-decoration
+
+        &:hover {
+            color: $lightGray;
+        }
+    }
 }
 
 a {
@@ -50,6 +65,10 @@ li {
 img {
     width: 100%;
     border-radius: 1rem;
+}
+
+.overflow-x {
+    overflow-x: auto;
 }
 
 // --------------------------------------------------
@@ -117,6 +136,10 @@ header {
             max-width: 20rem;
 
             display: none;
+
+            a:hover {
+                color: $lightGray;
+            }
         }
 
         @media screen and (min-width: $tabletWidth) {

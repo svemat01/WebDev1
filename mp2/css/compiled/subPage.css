@@ -5,6 +5,7 @@ table {
 table th {
   font-size: 2rem;
   text-align: center;
+  padding: 0 1rem;
 }
 table td {
   font-size: 1.7rem;
@@ -14,7 +15,7 @@ table tbody tr:nth-child(odd) > td {
   background-color: #cfcfcf;
 }
 table.rounded {
-  border: 0.7rem solid #838383;
+  border: 0.5rem solid #838383;
   border-radius: 1.5rem;
   border-spacing: 0.2rem;
   padding-bottom: 0.1rem;
@@ -22,9 +23,6 @@ table.rounded {
 table.rounded td {
   border: 1px solid #838383;
   padding: 10px;
-}
-table.rounded tr:last-child > td {
-  border-bottom: none;
 }
 table.rounded tbody tr:first-child > td:first-child {
   border-top-left-radius: 0.5rem;
@@ -61,13 +59,19 @@ table.rounded tbody tr:last-child > td:last-child {
   }
 }
 
-h1 {
+main h1 {
   font-size: 3rem;
   margin-bottom: 1.5rem;
 }
-
-h2 {
+main h2 {
   margin-bottom: 1.5rem;
 }
 
-/*# sourceMappingURL=about.css.map */
+#iamwrong:hover > span {
+  display: none;
+}
+#iamwrong:hover:after {
+  content: "I am wrong and semantic HTML is actually really annoying :)))";
+}
+
+/*# sourceMappingURL=subPage.css.map */
