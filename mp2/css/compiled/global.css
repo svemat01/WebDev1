@@ -39,29 +39,6 @@ body {
   min-height: 100vh;
 }
 
-main h1 {
-  font-size: 3rem;
-}
-main h2 {
-  font-size: 2.5em;
-  margin-bottom: 1rem;
-}
-main h3 {
-  font-size: 2em;
-  margin-bottom: 1rem;
-}
-main p {
-  font-size: 1.7rem;
-  margin-bottom: 1rem;
-}
-main a.underline {
-  color: #cfcfcf;
-  border-bottom: 0.2rem solid currentColor;
-}
-main a.underline:hover {
-  color: #838383;
-}
-
 a {
   text-decoration: none;
   color: inherit;
@@ -159,6 +136,28 @@ header nav ul a:hover {
 main {
   margin: 2rem;
   flex-grow: 1;
+}
+main h1 {
+  font-size: 3rem;
+}
+main h2 {
+  font-size: 2.5em;
+  margin-bottom: 1rem;
+}
+main h3 {
+  font-size: 2em;
+  margin-bottom: 1rem;
+}
+main p {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+main a.underline {
+  color: #cfcfcf;
+  border-bottom: 0.2rem solid currentColor;
+}
+main a.underline:hover {
+  color: #838383;
 }
 
 footer {

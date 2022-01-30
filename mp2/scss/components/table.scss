@@ -3,8 +3,6 @@ table {
     color: $dark;
 
     th {
-        // background-color: blue;
-        // border-top: none;
         font-size: 2rem;
         text-align: center;
         padding: 0 1rem;
@@ -15,10 +13,12 @@ table {
         padding-right: 1.7rem;
     }
 
+    // Only apply for every other row
     tbody tr:nth-child(odd) > td {
         background-color: $darkWhite;
     }
 
+    // Optional: Make tables rounded
     &.rounded {
         border: 0.5rem solid $lightGray;
         border-radius: 1.5rem;
@@ -32,6 +32,8 @@ table {
         }
 
         tbody {
+
+            // Make the corners of the table rows rounded
             tr {
                 &:first-child > td {
                     &:first-child {

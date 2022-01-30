@@ -9,7 +9,7 @@
 
 html {
     font-size: 62.5%;
-    overflow-x: hidden;
+    overflow-x: hidden; // Hide overflowing contents on the x axis if needed
 }
 
 body {
@@ -20,37 +20,7 @@ body {
     display: flex;
     flex-direction: column;
 
-    min-height: 100vh;
-}
-
-main {
-    h1 {
-        font-size: 3rem;
-    }
-
-    h2 {
-        font-size: 2.5em;
-        margin-bottom: 1rem;
-    }
-
-    h3 {
-        font-size: 2em;
-        margin-bottom: 1rem;
-    }
-
-    p {
-        font-size: 1.7rem;
-        margin-bottom: 1rem;
-    }
-
-    a.underline {
-        color: $darkWhite;
-        border-bottom: 0.2rem solid currentColor; // border bottom gave me more flexibility than text-decoration
-
-        &:hover {
-            color: $lightGray;
-        }
-    }
+    min-height: 100vh; // Make the body minimum full height of the window to put footer at bottom
 }
 
 a {
@@ -94,14 +64,21 @@ header {
         font-size: 3.4em;
 
         @media (max-width: 300px) {
-            font-size: 2.5em;
+            font-size: 2.5em; // Make font smaller on smaller phones to prevent overflow
         }
 
         @media screen and (max-width: $tabletWidth) {
-            margin: 0 auto;
+            margin: 0 auto; // Center text on smaller screens
         }
     }
     nav {
+
+        // --------------------------------------------------
+        // I chose not to make an absolute positioned nav since I liked
+        // this way better. However if you'd like me to show and absolute
+        // positioned navbar, I could do that later.
+        // --------------------------------------------------
+
         display: flex;
 
         justify-content: flex-end;
@@ -120,7 +97,6 @@ header {
             font-size: 3rem;
 
             padding-right: 2rem;
-            // margin-left: auto;
         }
 
         ul {
@@ -143,7 +119,7 @@ header {
             display: none;
 
             li.mark {
-                border-bottom: 0.2rem solid currentColor;
+                border-bottom: 0.2rem solid currentColor; // Alternative to underline which worked better for me
             }
 
             a:hover {
@@ -151,6 +127,7 @@ header {
             }
         }
 
+        // Expand menu on desktop
         @media screen and (min-width: $desktopWidth) {
             margin-left: auto;
 
@@ -159,7 +136,7 @@ header {
             padding-top: 0;
 
             #menuButton {
-                display: none;
+                display: none; // Hide menu button on desktop
             }
 
             ul {
@@ -174,10 +151,42 @@ header {
     }
 }
 
+// --------------------------------------------------
+
 main {
     margin: 2rem;
-    flex-grow: 1;
+    flex-grow: 1; // Allow main to expand to take up all available space, for putting footer at bottom
+    
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2.5em;
+        margin-bottom: 1rem;
+    }
+
+    h3 {
+        font-size: 2em;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: 1.7rem;
+        margin-bottom: 1rem;
+    }
+
+    a.underline {
+        color: $darkWhite;
+        border-bottom: 0.2rem solid currentColor; // border bottom gave me more flexibility than text-decoration
+
+        &:hover {
+            color: $lightGray;
+        }
+    }
 }
+
+// --------------------------------------------------
 
 footer {
     background: $dark;

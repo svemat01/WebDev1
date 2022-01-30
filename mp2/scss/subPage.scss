@@ -3,7 +3,6 @@
 @import "components/table.scss";
 
 .author {
-    // display: flex;
     flex-wrap: wrap;
 
     flex-direction: column;
@@ -39,9 +38,10 @@ main {
     }
 }
 
+// --------------------------------------------------
 // Unique scss for certain elements
 
-#iamwrong:hover {
+#iamwrong:hover { // Small easter egg :)
     > span {
         display: none;
     }
