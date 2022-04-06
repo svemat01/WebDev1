@@ -15,6 +15,9 @@
 		{
 			"name": "mp2",
 			"path": "mp2"
+		},
+		{
+			"path": "m5"
 		}
 	],
 	"settings": {
