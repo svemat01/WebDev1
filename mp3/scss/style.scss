@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: lcd;
+    src: url(../font/SUBWT___.ttf);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+
+    padding: 1rem;
+
+    background-color: black;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+
+    width: min(100% - 2rem, 800px);
+
+    margin-inline: auto;
+    margin-top: 2rem;
+
+    input {
+        width: 100%;
+
+        margin-bottom: 10px;
+        padding: 10px 4px 10px 4px;
+
+        background-color: black;
+        color: green;
+
+        font-size: 3rem;
+        text-align: right;
+        font-family: lcd;
+
+        border: 1px solid yellow;
+        border-radius: 4px;
+
+        overflow-x: scroll;
+    }
+
+    section#keyBoard {
+        /** Grid eller liknade */
+
+        display: grid;
+        gap: 0.5rem;
+
+        button {
+            height: 8rem;
+
+            border-radius: 0.75rem;
+
+            font-size: 4rem;
+
+            background-color: lightgray;
+
+            color: black;
+
+            &#add,
+            &#sub,
+            &#mul,
+            &#div,
+            &#comma,
+            &#enter,
+            &#clear {
+                color: #5389fd;
+            }
+
+            &:active {
+                box-shadow: 0 1px gray;
+                transform: translateY(1px);
+            }
+        }
+    }
+}

@@ -24,6 +24,7 @@
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "mp2"
-	}
+		"liveServer.settings.multiRootWorkspaceName": "mp3",
+		"liveServer.settings.port": 5501
+	},
 }
