@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "checkJs": true,
+        "outDir": "js",
+        "sourceMap": true,
+        "target": "ES6",
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "strict": true,
+        "watch": true
+    },
+    "include": ["ts/**/*.ts"]
+}

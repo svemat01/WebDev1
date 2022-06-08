@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "typescript": "^4.6.3"
+  },
+  "scripts": {
+    "ts": "tsc",
+    "scss": "sass scss/:css/ --watch"
+  }
+}
